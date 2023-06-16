@@ -21,3 +21,9 @@ text-align: center;
     width:100%;
     max-width:100px;
 }
+.coming-soon{
+background:blue url("Bitmap.png") no-repeat right top;
+background-size:cover;
+height:300px;
+width:100%;
+}
