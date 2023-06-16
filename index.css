@@ -1,0 +1,21 @@
+/*
+
+    note: we can create a fall back latter value like so:
+
+    background-color:var(--margin, 10px);
+
+    we can get custom  proeprties through javascript :
+    .getPropertyValue("")
+*/
+:root {
+    --primary-color:red;
+}
+h2{
+    background-color:var(--primary-color);
+    color:white;
+    padding:.5rem;
+}
+
+p {
+    color:var(--primary-color);
+}
