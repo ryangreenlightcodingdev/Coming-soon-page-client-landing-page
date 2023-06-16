@@ -1,21 +1,23 @@
 /*
+    note: text algin center and margin auto do not
+    work on inline elements
 
-    note: we can create a fall back latter value like so:
-
-    background-color:var(--margin, 10px);
-
-    we can get custom  proeprties through javascript :
-    .getPropertyValue("")
 */
-:root {
-    --primary-color:red;
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
-h2{
-    background-color:var(--primary-color);
-    color:white;
-    padding:.5rem;
+html,body{
+    min-width:100%;
+    min-height: 100%;
 }
 
-p {
-    color:var(--primary-color);
+.navBar{
+    width:100%;
+text-align: center;
+}
+.navBar > img{
+    width:100%;
+    max-width:100px;
 }
