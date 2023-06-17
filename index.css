@@ -18,6 +18,10 @@
     font-family: AdiHaus;
   }
   
+  body {
+    display: flex;
+  }
+  
   .all-container {
     max-width: 450px;
     margin: 0 auto;
@@ -28,8 +32,8 @@
     display: block;
   }
   
-  #athlete {
-    background: blue url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat right top;
+  #athlete-mobile {
+    background: url("https://assets.codepen.io/6060109/athlete-girl.png") no-repeat right top;
     background-size: cover;
     height: 250px;
     width: 100%;
@@ -90,4 +94,43 @@
     font-size: 16px;
     color: white;
     border: none;
+  }
+  
+  .desktop-image {
+    display: none;
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    
+    body {
+      background: url('https://assets.codepen.io/6060109/destop-bg.png');
+      background-size: cover;
+    }
+    
+    .all-container {
+      width: 50%;
+    }  
+    .text-content-container {
+          text-align: left;
+    }
+    #athlete-mobile {
+      display: none;
+    }  
+    #logo {
+      margin: 30px 30px 100px;
+      display: block;
+    }
+    .desktop-image {
+      display: block;
+      width: 50%;
+      background: url('https://assets.codepen.io/6060109/athlete-big.png');
+      background-size: cover;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+    }
+    
+    h2 {
+      font-size: 64px;
+    }
+  
   }
